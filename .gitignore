@@ -1,0 +1,10 @@
+preparation/.DS_Store
+.DS_Store
+preparation/target/w*_parameters.json
+preparation/target/logs/*
+preparation/target/aws-one-click-env/*
+results/logs/*
+results/logs/*
+results/queries/*
+results/EMR.jar
+setup/tmp/*

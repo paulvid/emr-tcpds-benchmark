@@ -1,0 +1,12 @@
+query41.sql 
+query13.sql 
+query19.sql 
+query27.sql 
+query3.sql 
+query34.sql 
+query43.sql 
+query52.sql 
+query55.sql 
+query63.sql 
+query7.sql 
+query73.sql 

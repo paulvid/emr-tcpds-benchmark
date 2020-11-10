@@ -1,0 +1,15 @@
+{
+    "prefix":         "pedb",
+    "region":         "us-west-2",
+    "key":            "field",
+    "emr_version":    "emr-6.1.0",
+    "worker_type":    "r5d.4xlarge",
+    "worker_count":   "2",
+    "aws_profile":    "manowar_perf",
+    "use_external_db":    "yes",
+    "delete_external_db": "no"
+}
+
+
+
+

@@ -1,0 +1,41 @@
+[
+  {
+    "Classification": "tez-site",
+    "Properties": {
+      "tez.history.logging.service.class": "org.apache.tez.dag.history.logging.proto.ProtoHistoryLoggingService",
+      "tez.history.logging.proto-base-dir": "/tez_logs"
+    }
+  },
+  {
+    "Classification": "hive",
+    "Properties": {
+      "hive.llap.enabled": "true",
+      "hive.llap.percent-allocation": "1.0",
+      "hive.llap.num-instances": "10",
+      "hive.hook.proto.base-directory": "/hive_logs",
+      "hive.exec.failure.hooks": "org.apache.hadoop.hive.ql.hooks.HiveProtoLoggingHook",
+      "hive.exec.post.hooks": "org.apache.hadoop.hive.ql.hooks.HiveProtoLoggingHook",
+      "hive.exec.pre.hooks": "org.apache.hadoop.hive.ql.hooks.HiveProtoLoggingHook",
+      "hive.metastore.transactional.event.listeners": "org.apache.hive.hcatalog.listener.DbNotificationListener"
+    }
+  },
+  {
+    "Classification": "emrfs-site",
+    "Properties": {
+      "fs.s3.consistent.retryPeriodSeconds": "10",
+      "fs.s3.consistent": "true",
+      "fs.s3.consistent.retryCount": "5",
+      "fs.s3.consistent.metadata.tableName": "EmrFSMetadata"
+    }
+  },
+  {
+    "Classification": "hive-site",
+    "Properties": {
+      "javax.jdo.option.ConnectionUserName": "<DB_USER>",
+      "javax.jdo.option.ConnectionDriverName": "org.mariadb.jdbc.Driver",
+      "javax.jdo.option.ConnectionPassword": "<DB_PASSWORD>",
+      "javax.jdo.option.ConnectionURL": "jdbc:mysql://<DB_URL>:<DB_PORT>/hive?createDatabaseIfNotExist=true"
+    }
+  }
+]
+
